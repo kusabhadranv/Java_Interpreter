@@ -1,7 +1,7 @@
 # CSC 413 - Project Two - The Interpreter
 
-## Student Name  : Name here
+## Student Name  : Vaisakh Kusabhadran
 
-## Student ID    : ID here
+## Student ID    : 920442702
 
-## Student Email : Email here
+## Student Email : vkusabhadran@mail.sfsu.edu
