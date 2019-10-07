@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="623.0">interpreter.VirtualMachine</node>
+    <node x="245.0" y="395.0">bytecode.GotoCode</node>
+    <node x="1181.0" y="623.0">interpreter.Interpreter</node>
+    <node x="2205.0" y="173.0">bytecode.LitCode</node>
+    <node x="1715.0" y="195.0">bytecode.PopCode</node>
+    <node x="3185.0" y="162.0">bytecode.StoreCode</node>
+    <node x="556.0" y="623.0">interpreter.Program</node>
+    <node x="1960.0" y="184.0">bytecode.ReturnCode</node>
+    <node x="0.0" y="395.0">bytecode.FalseBranchCode</node>
+    <node x="2450.0" y="173.0">bytecode.LoadCode</node>
+    <node x="2940.0" y="184.0">bytecode.LabelCode</node>
+    <node x="263.0" y="623.0">interpreter.RunTimeStack</node>
+    <node x="2695.0" y="206.5">bytecode.ReadCode</node>
+    <node x="1396.0" y="623.0">interpreter.ByteCodeLoader</node>
+    <node x="1470.0" y="206.5">bytecode.HaltCode</node>
+    <node x="867.0" y="623.0">interpreter.CodeTable</node>
+    <node x="980.0" y="195.0">bytecode.BopCode</node>
+    <node x="245.0" y="195.5">bytecode.JumpCode</node>
+    <node x="1225.0" y="206.5">bytecode.WriteCode</node>
+    <node x="1715.0" y="0.0">bytecode.ByteCode</node>
+    <node x="490.0" y="206.0">bytecode.DumpCode</node>
+    <node x="735.0" y="195.0">bytecode.ArgsCode</node>
+    <node x="490.0" y="395.0">bytecode.CallCode</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="bytecode.ArgsCode" target="bytecode.ByteCode">
+      <point x="0.0" y="-58.5" />
+      <point x="847.5" y="112.0" />
+      <point x="1758.2692307692307" y="112.0" />
+      <point x="-69.23076923076928" y="36.0" />
+    </edge>
+    <edge source="bytecode.LitCode" target="bytecode.ByteCode">
+      <point x="0.0" y="-80.5" />
+      <point x="2317.5" y="132.0" />
+      <point x="1862.1153846153848" y="132.0" />
+      <point x="34.615384615384755" y="36.0" />
+    </edge>
+    <edge source="bytecode.HaltCode" target="bytecode.ByteCode">
+      <point x="0.0" y="-47.0" />
+      <point x="1582.5" y="142.0" />
+      <point x="1810.1923076923076" y="142.0" />
+      <point x="-17.307692307692378" y="36.0" />
+    </edge>
+    <edge source="bytecode.DumpCode" target="bytecode.ByteCode">
+      <point x="0.0" y="-47.5" />
+      <point x="602.5" y="102.0" />
+      <point x="1740.9615384615386" y="102.0" />
+      <point x="-86.53846153846143" y="36.0" />
+    </edge>
+    <edge source="bytecode.PopCode" target="bytecode.ByteCode">
+      <point x="0.0" y="-58.5" />
+      <point x="0.0" y="36.0" />
+    </edge>
+    <edge source="bytecode.GotoCode" target="bytecode.JumpCode">
+      <point x="0.0" y="-91.5" />
+      <point x="0.0" y="58.0" />
+    </edge>
+    <edge source="bytecode.JumpCode" target="bytecode.ByteCode">
+      <point x="0.0" y="-58.0" />
+      <point x="357.5" y="92.0" />
+      <point x="1723.6538461538462" y="92.0" />
+      <point x="-103.84615384615381" y="36.0" />
+    </edge>
+    <edge source="bytecode.StoreCode" target="bytecode.ByteCode">
+      <point x="0.0" y="-91.5" />
+      <point x="3297.5" y="92.0" />
+      <point x="1931.3461538461538" y="92.0" />
+      <point x="103.84615384615381" y="36.0" />
+    </edge>
+    <edge source="bytecode.WriteCode" target="bytecode.ByteCode">
+      <point x="0.0" y="-47.0" />
+      <point x="1337.5" y="132.0" />
+      <point x="1792.8846153846155" y="132.0" />
+      <point x="-34.61538461538453" y="36.0" />
+    </edge>
+    <edge source="bytecode.ReturnCode" target="bytecode.ByteCode">
+      <point x="0.0" y="-69.5" />
+      <point x="2072.5" y="142.0" />
+      <point x="1844.8076923076924" y="142.0" />
+      <point x="17.307692307692378" y="36.0" />
+    </edge>
+    <edge source="bytecode.FalseBranchCode" target="bytecode.JumpCode">
+      <point x="0.0" y="-91.5" />
+      <point x="112.5" y="370.0" />
+      <point x="282.5" y="370.0" />
+      <point x="-75.0" y="58.0" />
+    </edge>
+    <edge source="bytecode.CallCode" target="bytecode.JumpCode">
+      <point x="0.0" y="-91.5" />
+      <point x="602.5" y="370.0" />
+      <point x="432.5" y="370.0" />
+      <point x="75.0" y="58.0" />
+    </edge>
+    <edge source="bytecode.BopCode" target="bytecode.ByteCode">
+      <point x="0.0" y="-58.5" />
+      <point x="1092.5" y="122.0" />
+      <point x="1775.576923076923" y="122.0" />
+      <point x="-51.923076923076906" y="36.0" />
+    </edge>
+    <edge source="bytecode.LabelCode" target="bytecode.ByteCode">
+      <point x="0.0" y="-69.5" />
+      <point x="3052.5" y="102.0" />
+      <point x="1914.0384615384617" y="102.0" />
+      <point x="86.53846153846166" y="36.0" />
+    </edge>
+    <edge source="bytecode.LoadCode" target="bytecode.ByteCode">
+      <point x="0.0" y="-80.5" />
+      <point x="2562.5" y="122.0" />
+      <point x="1879.423076923077" y="122.0" />
+      <point x="51.923076923076906" y="36.0" />
+    </edge>
+    <edge source="bytecode.ReadCode" target="bytecode.ByteCode">
+      <point x="0.0" y="-47.0" />
+      <point x="2807.5" y="112.0" />
+      <point x="1896.7307692307693" y="112.0" />
+      <point x="69.23076923076928" y="36.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5819817209292346" x="959.2031852370236" y="219.69520868095356" />
+  <SelectedNodes>
+    <node>interpreter.VirtualMachine</node>
+    <node>bytecode.GotoCode</node>
+    <node>interpreter.Interpreter</node>
+    <node>bytecode.LitCode</node>
+    <node>bytecode.PopCode</node>
+    <node>bytecode.StoreCode</node>
+    <node>interpreter.Program</node>
+    <node>bytecode.ReturnCode</node>
+    <node>bytecode.FalseBranchCode</node>
+    <node>bytecode.LoadCode</node>
+    <node>bytecode.LabelCode</node>
+    <node>interpreter.RunTimeStack</node>
+    <node>bytecode.ReadCode</node>
+    <node>interpreter.ByteCodeLoader</node>
+    <node>bytecode.HaltCode</node>
+    <node>interpreter.CodeTable</node>
+    <node>bytecode.BopCode</node>
+    <node>bytecode.JumpCode</node>
+    <node>bytecode.WriteCode</node>
+    <node>bytecode.ByteCode</node>
+    <node>bytecode.DumpCode</node>
+    <node>bytecode.ArgsCode</node>
+    <node>bytecode.CallCode</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
