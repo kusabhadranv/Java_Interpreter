@@ -4,5 +4,7 @@
 * Dumping feature which displays each bytecode functionality and current frame status 
 \
 \
-Sample output : TestResult.pdf
+Sample output : TestResult.pdf \
+Documentation : documentation/Interpreter_Document.pdf
+
 
